@@ -111,7 +111,7 @@ def load_ipython_extension(ip):
         printable_containers = [list, tuple]
 
         # set and frozen set were broken with SymPy's latex() function, but
-        # was fixed in the 0.7.1-git development version. See
+        # was fixed in the 0.7.2 development version. See
         # http://code.google.com/p/sympy/issues/detail?id=3062.
         if sympy.__version__ > '0.7.1':
             printable_containers += [set, frozenset]
